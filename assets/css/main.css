@@ -1,0 +1,248 @@
+@import url("../fonts/fonts.css");
+body
+{
+    margin: 0;
+}
+section {
+	height: 100vh; /* высота секции равна высоте области просмотра */
+}
+.rectfirst
+{
+    position: absolute;
+    left: 32.08%;
+    right: 32.08%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(180deg, rgba(40, 39, 175, 0.5) 0%, rgba(9, 9, 117, 0.5) 100%);
+    background-blend-mode: screen;
+}
+.minirectfirst
+{
+    position: absolute;
+    left: 37.29%;
+    right: 37.22%;
+    top: 7.91%;
+    bottom: 7.91%;
+}
+.head-firstrow
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+}
+.head-secondrow
+{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    background-color: #252ACF;
+}
+.head-thirdrow
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #7F30A1;
+}
+.head-first
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #7F30A1;
+}
+.head-second
+{
+    background-color: #EF705D;
+}
+.head-third
+{
+    background-color: #00BE75;
+}
+.head-fourth
+{
+    background-color: #252ACF;
+}
+.head-labelfirst
+{
+    margin-top: 48.56px;
+    margin-left: 56px;
+}
+.head-labelsecond
+{
+    margin-top: 48.56px;
+    margin-left: 15.3px;
+    color: #FFFFFF;
+}
+.head-burgerbutton
+{
+    margin-left: auto;
+    margin-right: 61px;
+    align-self: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgba(27, 27, 27, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+.bar1 {
+    margin-top: 18;
+    margin-left: 15;
+}
+.bar2 {
+    margin-top: 28;
+    margin-left: 15;
+}
+.bar3 {
+    margin-top: 38;
+    margin-left: 15;
+}
+.head-blocktext
+{
+    margin-left: 158px;
+}
+.head-blocktext-first
+{
+    font-family: Lora;
+font-style: italic;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+
+/* identical to box height, or 125% */
+letter-spacing: 1.07271px;
+text-transform: lowercase;
+
+color: #FFFFFF;
+}
+.head-blocktext-second
+{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+
+/* or 125% */
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.head-blocktext-third
+{
+    margin-top: 21px;
+    font-family: Karla;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+
+/* or 139% */
+letter-spacing: 3px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.head-blocktext-fourth
+{
+    margin-top: 64px;
+    font-family: Lora;
+font-style: italic;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+
+/* identical to box height, or 125% */
+letter-spacing: 1.07271px;
+text-transform: lowercase;
+
+color: #FFFFFF;
+}
+.head-blocktext-fifth
+{
+    width: 393px;
+    margin-top: 46px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    
+    /* identical to box height, or 122% */
+    letter-spacing: 6px;
+    
+    color: #FFFFFF;
+}
+.blocktext-fifth
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head-leftside
+{
+    margin-left: 158px;
+    display: flex;
+    flex-direction: column;
+}
+.blocktext-leftside-first
+{
+    font-family: Lora;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+
+/* identical to box height, or 125% */
+    letter-spacing: 1.07271px;
+    text-transform: lowercase;
+
+    color: #FFFFFF;
+}
+
+
+.head-rightside
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about
+{
+    background-color: black;
+}
+.interactive
+{
+    background-color: orange;
+}
+.dive
+{
+    background-color: green;
+}
+.finaly
+{
+    background-color: blue;
+}
