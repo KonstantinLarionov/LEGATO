@@ -1,4 +1,17 @@
-@import url("../fonts/fonts.css");
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), local('Montserrat-Regular'), url('../fonts/montserrat.woff2') format('woff2'), url('../fonts/montserrat.woff') format('woff'), url('../fonts/montserrat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Karla';
+    src: local('Karla'), local('Karla-Regular'), url('../fonts/Karla-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body
 {
     margin: 0;
@@ -6,24 +19,24 @@ body
 section {
 	height: 100vh; /* высота секции равна высоте области просмотра */
 }
-.rectfirst
-{
-    position: absolute;
-    left: 32.08%;
-    right: 32.08%;
-    top: 0%;
-    bottom: 0%;
-    background: linear-gradient(180deg, rgba(40, 39, 175, 0.5) 0%, rgba(9, 9, 117, 0.5) 100%);
-    background-blend-mode: screen;
-}
-.minirectfirst
-{
-    position: absolute;
-    left: 37.29%;
-    right: 37.22%;
-    top: 7.91%;
-    bottom: 7.91%;
-}
+/*.rectfirst*/
+/*{*/
+/*    position: absolute;*/
+/*    left: 32.08%;*/
+/*    right: 32.08%;*/
+/*    top: 0%;*/
+/*    bottom: 0%;*/
+/*    background: linear-gradient(180deg, rgba(40, 39, 175, 0.5) 0%, rgba(9, 9, 117, 0.5) 100%);*/
+/*    background-blend-mode: screen;*/
+/*}*/
+/*.minirectfirst*/
+/*{*/
+/*    position: absolute;*/
+/*    left: 37.29%;*/
+/*    right: 37.22%;*/
+/*    top: 7.91%;*/
+/*    bottom: 7.91%;*/
+/*}*/
 .head-firstrow
 {
     width: 100%;
@@ -37,7 +50,7 @@ section {
     height: 65%;
     display: flex;
     flex-direction: row;
-    background-color: #252ACF;
+    /*background-color: #252ACF;*/
 }
 .head-thirdrow
 {
@@ -45,7 +58,8 @@ section {
     height: auto;
     display: flex;
     flex-direction: row;
-    background-color: #7F30A1;
+
+    justify-content: space-between;
 }
 .head-first
 {
@@ -98,20 +112,20 @@ section {
     position: absolute; 
 }
 .bar1 {
-    margin-top: 18;
-    margin-left: 15;
+    margin-top: 18px;
+    margin-left: 15px;
 }
 .bar2 {
-    margin-top: 28;
-    margin-left: 15;
+    margin-top: 28px;
+    margin-left: 15px;
 }
 .bar3 {
-    margin-top: 38;
-    margin-left: 15;
+    margin-top: 38px;
+    margin-left: 15px;
 }
 .head-blocktext
 {
-    margin-left: 158px;
+    margin-left: 10%;
 }
 .head-blocktext-first
 {
@@ -127,12 +141,86 @@ text-transform: lowercase;
 
 color: #FFFFFF;
 }
+
+#carousel {
+    position: relative;
+    height: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+#carousel div img {
+    width: 400px;
+    transition: width 1s;
+}
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+    width: 200px;
+}
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+    width: 200px;
+}
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+    width: 300px;
+}
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+    width: 300px;
+}
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+    width: 200px;
+}
+
 .head-blocktext-second
 {
-    font-family: Montserrat;
-    font-weight: 800;
+    font-family:  "Montserrat",sans-serif;
+    font-weight: 700;
     font-size: 48px;
     line-height: 60px;
+    letter-spacing: 1.07271px;
 
 /* or 125% */
     text-transform: uppercase;
@@ -142,7 +230,7 @@ color: #FFFFFF;
 .head-blocktext-third
 {
     margin-top: 21px;
-    font-family: Karla;
+    font-family: "Karla", sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 18px;
@@ -173,7 +261,7 @@ color: #FFFFFF;
 {
     width: 393px;
     margin-top: 46px;
-    font-family: Karla;
+    font-family: "Karla", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -193,32 +281,102 @@ color: #FFFFFF;
 }
 .head-leftside
 {
-    margin-left: 158px;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
 }
 .blocktext-leftside-first
+ {
+     font-family: Lora;
+     font-style: italic;
+     font-weight: normal;
+     font-size: 24px;
+     line-height: 30px;
+
+     /* identical to box height, or 125% */
+     letter-spacing: 1.07271px;
+     text-transform: lowercase;
+
+     color: #FFFFFF;
+ }
+.blocktext-rightside-first
 {
+    margin-right: 255px;
     font-family: Lora;
     font-style: italic;
     font-weight: normal;
     font-size: 24px;
     line-height: 30px;
 
-/* identical to box height, or 125% */
+    /* identical to box height, or 125% */
     letter-spacing: 1.07271px;
     text-transform: lowercase;
 
     color: #FFFFFF;
 }
+.blocktext-leftside-second
+{
+    width: 493px;
+    margin-top: 46px;
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
 
+    /* identical to box height, or 122% */
+    letter-spacing: 6px;
+
+    color: #FFFFFF;
+}
 
 .head-rightside
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.head-element
+{
+    margin-top: -20%;
+    margin-left: -30%;
+}
+.head-rightside-fillprofile
+{
+    margin-top: -10%;
+    font-family: "Karla",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 50px;
+    /* or 156% */
+
+    letter-spacing: 21.2px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 
 }
-
-
+.social-item
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #8c44aa;
+}
+.head-social
+{
+    margin-top: -10px;
+    margin-left: -7%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
