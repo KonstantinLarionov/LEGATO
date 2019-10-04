@@ -11,7 +11,8 @@
 //     };
 
 function showMenu() {
-   $('#menu').toggleClass('menu-active');
+    $('#menu').toggleClass('menu-active');
+    $('.content').toggleClass('content-active');
    if ($('#menu').hasClass('menu-active')) {
        $('#menu_buttom :first-child').css("transform", "rotate(-45deg)");
        $('#menu_buttom :last-child').css("transform", "rotate(45deg)");
